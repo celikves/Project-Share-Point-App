@@ -10,6 +10,7 @@
 		DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */; };
 		DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E0282FEC9100943269 /* LoginViewController.swift */; };
 		DDBCB8E3282FECBD00943269 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E2282FECBD00943269 /* HomeViewController.swift */; };
+		DDDFD32828301CFF0019B142 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD32728301CFF0019B142 /* Utilities.swift */; };
 		DDE94C29281835DB0008E584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE94C28281835DB0008E584 /* AppDelegate.swift */; };
 		DDE94C2B281835DB0008E584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE94C2A281835DB0008E584 /* SceneDelegate.swift */; };
 		DDE94C2D281835DB0008E584 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE94C2C281835DB0008E584 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E0282FEC9100943269 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E2282FECBD00943269 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DDDFD32728301CFF0019B142 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		DDE94C25281835DB0008E584 /* Project-Share-Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Share-Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE94C28281835DB0008E584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE94C2A281835DB0008E584 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			path = "View-Controllers";
 			sourceTree = "<group>";
 		};
+		DDDFD32928301D120019B142 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFD32728301CFF0019B142 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DDE94C1C281835DB0008E584 = {
 			isa = PBXGroup;
 			children = (
@@ -73,9 +83,10 @@
 		DDE94C27281835DB0008E584 /* Project-Share-Point */ = {
 			isa = PBXGroup;
 			children = (
-				DDBCB8E4282FECCF00943269 /* View-Controllers */,
 				DDE94C28281835DB0008E584 /* AppDelegate.swift */,
 				DDE94C2A281835DB0008E584 /* SceneDelegate.swift */,
+				DDDFD32928301D120019B142 /* Helpers */,
+				DDBCB8E4282FECCF00943269 /* View-Controllers */,
 				DDE94C2E281835DB0008E584 /* Main.storyboard */,
 				DDE94C31281835DF0008E584 /* Assets.xcassets */,
 				DDE94C33281835DF0008E584 /* LaunchScreen.storyboard */,
@@ -157,6 +168,7 @@
 			files = (
 				DDE94C2D281835DB0008E584 /* ViewController.swift in Sources */,
 				DDE94C29281835DB0008E584 /* AppDelegate.swift in Sources */,
+				DDDFD32828301CFF0019B142 /* Utilities.swift in Sources */,
 				DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */,
 				DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */,
 				DDE94C2B281835DB0008E584 /* SceneDelegate.swift in Sources */,
