@@ -59,15 +59,38 @@ class SignUpViewController: UIViewController {
             
             return "Please fill the all fields."
         }
+        
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            //password is not secure enough
+            
+            return "Please make sure your password is at least 8 characters,contains a special character and a number. "
+        }
+        
+        return nil
     }
     
 
     @IBAction func signupButtonTapped(_ sender: Any) {
         
         //Validate user
-        //Create the use
-        //Transition to the home page
+        let error = validateFields()
+        //there is sth wrong with input fields.
+        if error != nil {
+            showError(error!)
+        }
+        else{
+            //Create the use
+            //Transition to the home page
+            
+        }
         
+    }
+    
+    func showError(_ message:String) {
+        errorLabel.text = message
+        errorLabel.alpha = 1
     }
     
 
