@@ -30,6 +30,28 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUpElements()
+    }
+    
+    func setUpElements() {
+        //Hide the error label
+        errorLabel.alpha = 0
+        
+        //Style the elements 
+        Utilities.styleTextField(firstNameTextField)
+        
+        Utilities.styleTextField((lastNameTextField))
+        
+        Utilities.styleTextField(usernameTextField)
+        
+        Utilities.styleTextField(emailTextField)
+        
+        Utilities.styleTextField(passwordTextField)
+        
+        Utilities.styleTextField(confirmPasswordTextField)
+        
+        Utilities.styleFilledButton(signupButton)
+    
     }
     
 
