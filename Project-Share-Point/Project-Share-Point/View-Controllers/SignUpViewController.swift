@@ -39,23 +39,34 @@ class SignUpViewController: UIViewController {
         
         //Style the elements 
         Utilities.styleTextField(firstNameTextField)
-        
         Utilities.styleTextField((lastNameTextField))
-        
         Utilities.styleTextField(usernameTextField)
-        
         Utilities.styleTextField(emailTextField)
-        
         Utilities.styleTextField(passwordTextField)
-        
         Utilities.styleTextField(confirmPasswordTextField)
-        
         Utilities.styleFilledButton(signupButton)
     
     }
     
+    func validateFields () -> String? {
+        //Check that all fields are filled in
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill the all fields."
+        }
+    }
+    
 
     @IBAction func signupButtonTapped(_ sender: Any) {
+        
+        //Validate user
+        //Create the use
+        //Transition to the home page
         
     }
     
