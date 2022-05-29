@@ -65,7 +65,7 @@ class SignUpViewController: UIViewController {
         if Utilities.isPasswordValid(cleanedPassword) == false {
             //password is not secure enough
             
-            return "Please make sure your password is at least 8 characters,contains a special character and a number. "
+            return "Please make sure your password is at least 8 characters,contains a special character and a number."
         }
         
         return nil
@@ -81,7 +81,8 @@ class SignUpViewController: UIViewController {
             showError(error!)
         }
         else{
-            //Create the use
+            
+            //Create the user
             //Transition to the home page
             
         }

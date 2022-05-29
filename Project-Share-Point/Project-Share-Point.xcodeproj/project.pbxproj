@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDB3C322284420D3002341DF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C321284420D3002341DF /* Constant.swift */; };
+		DDB3C32528442214002341DF /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C32428442214002341DF /* RegisterModel.swift */; };
 		DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */; };
 		DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E0282FEC9100943269 /* LoginViewController.swift */; };
 		DDBCB8E3282FECBD00943269 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E2282FECBD00943269 /* HomeViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDB3C321284420D3002341DF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DDB3C32428442214002341DF /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E0282FEC9100943269 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E2282FECBD00943269 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDB3C320284420B0002341DF /* Constanats */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3C321284420D3002341DF /* Constant.swift */,
+			);
+			path = Constanats;
+			sourceTree = "<group>";
+		};
+		DDB3C32328442200002341DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDB3C32428442214002341DF /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DDBCB8E4282FECCF00943269 /* View-Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 			children = (
 				DDE94C28281835DB0008E584 /* AppDelegate.swift */,
 				DDE94C2A281835DB0008E584 /* SceneDelegate.swift */,
+				DDB3C32328442200002341DF /* Model */,
+				DDB3C320284420B0002341DF /* Constanats */,
 				DDDFD32928301D120019B142 /* Helpers */,
 				DDBCB8E4282FECCF00943269 /* View-Controllers */,
 				DDE94C2E281835DB0008E584 /* Main.storyboard */,
@@ -169,10 +191,12 @@
 				DDE94C2D281835DB0008E584 /* ViewController.swift in Sources */,
 				DDE94C29281835DB0008E584 /* AppDelegate.swift in Sources */,
 				DDDFD32828301CFF0019B142 /* Utilities.swift in Sources */,
+				DDB3C322284420D3002341DF /* Constant.swift in Sources */,
 				DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */,
 				DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */,
 				DDE94C2B281835DB0008E584 /* SceneDelegate.swift in Sources */,
 				DDBCB8E3282FECBD00943269 /* HomeViewController.swift in Sources */,
+				DDB3C32528442214002341DF /* RegisterModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
