@@ -57,8 +57,16 @@ class SignUpViewController: UIViewController {
             confirmPasswordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
             return "Please fill the all fields."
+            
+            
+        } else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
+                    lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 {
+            
+            return "The fields Firstname, Lastname, Username must be a string or array type with a minimum length of 3."
+            
         }
-        
+                    
+                    
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         /*
         if Utilities.isPasswordValid(cleanedPassword) == false {
@@ -71,8 +79,19 @@ class SignUpViewController: UIViewController {
     }
 
     func showError(_ message:String) {
-        errorLabel.text = message
+        errorLabel.lineBreakMode = .byWordWrapping
+        errorLabel.numberOfLines = 3
+        errorLabel.text = "Error : \(message)"
         errorLabel.alpha = 1
+    }
+    
+    func transitionToHome() {
+        
+       let loginViewController  =  storyboard?.instantiateViewController(withIdentifier: Consts.StoryBoard.loginViewController) as? LoginViewController
+        
+        view.window?.rootViewController = loginViewController
+        view.window?.makeKeyAndVisible()
+        
     }
     
 }
@@ -101,6 +120,7 @@ extension SignUpViewController {
             APIManager.shareInstance.callingregisterAPI(register: registerModel)
             
             //Transition to the home page
+            self.transitionToHome()
             
         }
         

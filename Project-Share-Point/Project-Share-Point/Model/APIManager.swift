@@ -19,8 +19,12 @@ class APIManager {
             switch response.result {
             case .success(let data):
                 do{
-                    let json = try JSONSerialization.jsonObject(with: data!,options: [])
+                    let json = try JSONSerialization.jsonObject(with: data!,options: .mutableContainers) as? [String:Any]
                     print(json)
+                    if let json = json as? [String: Any], let code = json["code"] as? String {
+                        print(code)
+                    }
+                    
                 }catch {
                     print(error.localizedDescription)
                 }

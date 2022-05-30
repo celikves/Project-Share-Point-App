@@ -95,6 +95,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		DDE760872845126A008EDF0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDE94C28281835DB0008E584 /* AppDelegate.swift */,
+				DDE94C2A281835DB0008E584 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DDE94C1C281835DB0008E584 = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +123,7 @@
 		DDE94C27281835DB0008E584 /* Project-Share-Point */ = {
 			isa = PBXGroup;
 			children = (
-				DDE94C28281835DB0008E584 /* AppDelegate.swift */,
-				DDE94C2A281835DB0008E584 /* SceneDelegate.swift */,
+				DDE760872845126A008EDF0A /* Resources */,
 				DDB3C32328442200002341DF /* Model */,
 				DDB3C320284420B0002341DF /* Constanats */,
 				DDDFD32928301D120019B142 /* Helpers */,
