@@ -9,4 +9,4 @@ import Foundation
 
 let base_url = "https://projectsharepointapi.azurewebsites.net/api/Identity/"
 
-let register_url = "\(base_url)\register"
+let register_url = "\(base_url)register"

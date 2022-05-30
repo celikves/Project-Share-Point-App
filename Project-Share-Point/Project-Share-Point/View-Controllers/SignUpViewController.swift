@@ -26,7 +26,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,17 +60,27 @@ class SignUpViewController: UIViewController {
         }
         
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        /*
         if Utilities.isPasswordValid(cleanedPassword) == false {
             //password is not secure enough
             
             return "Please make sure your password is at least 8 characters,contains a special character and a number."
-        }
+        }*/
         
         return nil
     }
-    
 
+    func showError(_ message:String) {
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
+}
+
+
+
+extension SignUpViewController {
+    
     @IBAction func signupButtonTapped(_ sender: Any) {
         
         //Validate user
@@ -81,18 +90,19 @@ class SignUpViewController: UIViewController {
             showError(error!)
         }
         else{
-            
+            guard let fname = self.firstNameTextField.text else { return}
+            guard let lname = self.lastNameTextField.text else { return}
+            guard let uname = self.usernameTextField.text else { return}
+            guard let email = self.emailTextField.text else { return}
+            guard let passwd = self.passwordTextField.text else { return}
             //Create the user
+            
+            let registerModel = RegisterModel(username: uname, password: passwd, firstName: fname, lastName: lname, emailAddress: email)
+            APIManager.shareInstance.callingregisterAPI(register: registerModel)
+            
             //Transition to the home page
             
         }
         
     }
-    
-    func showError(_ message:String) {
-        errorLabel.text = message
-        errorLabel.alpha = 1
-    }
-    
-
 }

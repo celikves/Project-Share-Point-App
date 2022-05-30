@@ -7,4 +7,10 @@
 
 import Foundation
 
-//struct
+struct RegisterModel : Encodable {
+    let username : String
+    let password : String
+    let firstName : String
+    let lastName : String
+    let emailAddress : String
+}
