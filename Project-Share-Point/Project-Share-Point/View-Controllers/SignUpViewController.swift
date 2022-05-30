@@ -59,12 +59,13 @@ class SignUpViewController: UIViewController {
             return "Please fill the all fields."
             
             
-        } else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
+        }
+        /*else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
                     lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 {
             
             return "The fields Firstname, Lastname, Username must be a string or array type with a minimum length of 3."
             
-        }
+        }*/
                     
                     
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -120,6 +121,11 @@ extension SignUpViewController {
             APIManager.shareInstance.callingregisterAPI(register: registerModel)
             
             //Transition to the home page
+            
+         
+               
+            
+            
             self.transitionToHome()
             
         }
