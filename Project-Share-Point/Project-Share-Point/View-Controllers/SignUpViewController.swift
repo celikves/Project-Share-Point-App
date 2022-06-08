@@ -118,15 +118,36 @@ extension SignUpViewController {
             //Create the user
             
             let registerModel = RegisterModel(username: uname, password: passwd, firstName: fname, lastName: lname, emailAddress: email)
-            APIManager.shareInstance.callingregisterAPI(register: registerModel)
-            
-            //Transition to the home page
-            
+            APIManager.shareInstance.callingregisterAPI(register: registerModel){
+                (isSuccess,str) in
+                if isSuccess {
+                    let alert = UIAlertController(title: "Successed", message: str, preferredStyle: .alert)
+
+                           // add an action (button)
+                           alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) -> Void in
+                               // Present the other alertView
+                               self.transitionToHome()
+                           }))
+
+                           // show the alert
+                           self.present(alert, animated: true, completion: nil)
+                    
+                }else{
+                    // create the alert
+                            let alert = UIAlertController(title: "Failed", message: str, preferredStyle: UIAlertController.Style.alert)
+
+                            // add an action (button)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+                            // show the alert
+                            self.present(alert, animated: true, completion: nil)
+                   
+                    
+                    
+                }
+            }
          
-               
-            
-            
-            self.transitionToHome()
+            //self.transitionToHome()
             
         }
         

@@ -261,7 +261,7 @@
         <!--Item-->
         <scene sceneID="mvz-ex-7Fp">
             <objects>
-                <navigationController id="sKA-ac-6a7" sceneMemberID="viewController">
+                <navigationController id="sKA-ac-6a7" customClass="HomePageViewController" customModule="Project_Share_Point" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" id="WTJ-HQ-44k"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oKf-iF-FsI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -310,7 +310,7 @@
         <!--Item-->
         <scene sceneID="qUo-cM-Yl5">
             <objects>
-                <navigationController id="VHh-nT-Lfa" sceneMemberID="viewController">
+                <navigationController id="VHh-nT-Lfa" customClass="ProfilePageViewController" customModule="Project_Share_Point" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="Fjc-RK-51V"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKM-F2-bG9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
