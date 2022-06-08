@@ -298,8 +298,23 @@
                     <view key="view" contentMode="scaleToFill" id="sIn-zp-Vle">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to our homepage :)" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDp-In-h6I">
+                                <rect key="frame" x="57" y="413" width="300" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KXK-Jl-Q1C"/>
+                                    <constraint firstAttribute="height" constant="70" id="QFC-De-sSV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aaQ-wP-rTL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDp-In-h6I" firstAttribute="centerY" secondItem="sIn-zp-Vle" secondAttribute="centerY" id="Z0y-la-5Qg"/>
+                            <constraint firstItem="JDp-In-h6I" firstAttribute="centerX" secondItem="sIn-zp-Vle" secondAttribute="centerX" id="xY8-GR-N1Z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vhf-7i-pKl"/>
                 </viewController>
@@ -314,8 +329,23 @@
                     <view key="view" contentMode="scaleToFill" id="HcO-H2-FHo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome to your profile page :)" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="so7-9F-YA5">
+                                <rect key="frame" x="57" y="413" width="300" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Geu-y8-rxR"/>
+                                    <constraint firstAttribute="height" constant="70" id="vEw-tC-hG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="r0u-0a-PxK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="so7-9F-YA5" firstAttribute="centerY" secondItem="HcO-H2-FHo" secondAttribute="centerY" id="HQu-SI-BEe"/>
+                            <constraint firstItem="so7-9F-YA5" firstAttribute="centerX" secondItem="HcO-H2-FHo" secondAttribute="centerX" id="TRE-LC-DJF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dck-54-3cv"/>
                 </viewController>
@@ -345,9 +375,6 @@
         <image name="PHOTO-2022-06-04-14-11-27.jpg" width="170" height="91"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

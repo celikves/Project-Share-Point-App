@@ -15,9 +15,11 @@ let login_url = "\(base_url)login"
 
 
 struct Consts {
+    
     struct StoryBoard {
-       static let homeViewController = "HomeVC"
+        static let homeViewController = "HomeVC"
         static let loginViewController = "LoginVC"
+        //static let homePageViewController = ""
     }
 }
 

@@ -84,7 +84,7 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
-    func transitionToHome() {
+    func transitionToLogin() {
         
        let loginViewController  =  storyboard?.instantiateViewController(withIdentifier: Consts.StoryBoard.loginViewController) as? LoginViewController
         
@@ -122,7 +122,7 @@ extension SignUpViewController {
                            // add an action (button)
                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) -> Void in
                                // Present the other alertView
-                               self.transitionToHome()
+                               self.transitionToLogin()
                            }))
 
                            // show the alert

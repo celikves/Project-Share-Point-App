@@ -35,6 +35,15 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
     }
     
+    func transitionToHome() {
+        
+       let homeViewController  =  storyboard?.instantiateViewController(withIdentifier: Consts.StoryBoard.homeViewController) as? HomeViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
+        
+    }
+    
 
 }
 
@@ -60,57 +69,5 @@ extension LoginViewController {
         
     }
     
-    /*
-    
-    @IBAction func signupButtonTapped(_ sender: Any) {
-        
-        //Validate user
-        let error = validateFields()
-        //there is sth wrong with input fields.
-        if error != nil {
-            showError(error!)
-        }
-        else{
-            guard let fname = self.firstNameTextField.text else { return}
-            guard let lname = self.lastNameTextField.text else { return}
-            guard let uname = self.usernameTextField.text else { return}
-            guard let email = self.emailTextField.text else { return}
-            guard let passwd = self.passwordTextField.text else { return}
-            //Create the user
-            
-            let registerModel = RegisterModel(username: uname, password: passwd, firstName: fname, lastName: lname, emailAddress: email)
-            APIManager.shareInstance.callingregisterAPI(register: registerModel){
-                (isSuccess,str) in
-                if isSuccess {
-                    let alert = UIAlertController(title: "Successed", message: str, preferredStyle: .alert)
-
-                           // add an action (button)
-                           alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { (action) -> Void in
-                               // Present the other alertView
-                               self.transitionToHome()
-                           }))
-
-                           // show the alert
-                           self.present(alert, animated: true, completion: nil)
-                    
-                }else{
-                    // create the alert
-                            let alert = UIAlertController(title: "Failed", message: str, preferredStyle: UIAlertController.Style.alert)
-
-                            // add an action (button)
-                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-                            // show the alert
-                            self.present(alert, animated: true, completion: nil)
-                   
-                }
-            }
-         
-            //self.transitionToHome()
-            
-        }
-        
-    }
-     */
 }
 
