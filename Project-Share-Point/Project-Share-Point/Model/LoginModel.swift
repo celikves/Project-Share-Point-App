@@ -12,3 +12,8 @@ struct LoginModel:Encodable {
     let emailAddress : String
     let password : String
 }
+
+struct loginResponseModel {
+    let name: String
+    let email : String
+}

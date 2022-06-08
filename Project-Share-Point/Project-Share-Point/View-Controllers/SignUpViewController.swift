@@ -60,20 +60,19 @@ class SignUpViewController: UIViewController {
             
         }
         
-        /*else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
-                    lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 {
+        else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
+                    lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 || usernameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 {
             
-            return "The fields Firstname, Lastname, Username must be a string or array type with a minimum length of 3."
+            return "The fields Username must be a string or array type with a minimum length of 3."
             
-        }*/
+        }
                     
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        /*
+        
         if Utilities.isPasswordValid(cleanedPassword) == false {
             //password is not secure enough
-            
             return "Please make sure your password is at least 8 characters,contains a special character and a number."
-        }*/
+        }
         
         return nil
     }
