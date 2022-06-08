@@ -58,15 +58,14 @@ class SignUpViewController: UIViewController {
             
             return "Please fill the all fields."
             
-            
         }
+        
         /*else if firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 ||
                     lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines).count<3 {
             
             return "The fields Firstname, Lastname, Username must be a string or array type with a minimum length of 3."
             
         }*/
-                    
                     
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         /*
@@ -96,8 +95,6 @@ class SignUpViewController: UIViewController {
     }
     
 }
-
-
 
 extension SignUpViewController {
     
@@ -142,8 +139,6 @@ extension SignUpViewController {
                             // show the alert
                             self.present(alert, animated: true, completion: nil)
                    
-                    
-                    
                 }
             }
          

@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		DD2A9AC12844C4B1008E900C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2A9AC02844C4B1008E900C /* APIManager.swift */; };
 		DD2A9AC42844C58A008E900C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DD2A9AC32844C58A008E900C /* Alamofire */; };
+		DD8C5DBB2850237E008D136C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8C5DBA2850237E008D136C /* LoginModel.swift */; };
 		DDB3C322284420D3002341DF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C321284420D3002341DF /* Constant.swift */; };
 		DDB3C32528442214002341DF /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3C32428442214002341DF /* RegisterModel.swift */; };
 		DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */; };
 		DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E0282FEC9100943269 /* LoginViewController.swift */; };
 		DDBCB8E3282FECBD00943269 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBCB8E2282FECBD00943269 /* HomeViewController.swift */; };
 		DDDFD32828301CFF0019B142 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFD32728301CFF0019B142 /* Utilities.swift */; };
-		DDE760812844EE89008EDF0A /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE760802844EE89008EDF0A /* ServerModel.swift */; };
 		DDE760832844EF31008EDF0A /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE760822844EF31008EDF0A /* ProjectModel.swift */; };
 		DDE7608528450C91008EDF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE94C31281835DF0008E584 /* Assets.xcassets */; };
 		DDE94C29281835DB0008E584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE94C28281835DB0008E584 /* AppDelegate.swift */; };
@@ -27,13 +27,13 @@
 
 /* Begin PBXFileReference section */
 		DD2A9AC02844C4B1008E900C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DD8C5DBA2850237E008D136C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		DDB3C321284420D3002341DF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		DDB3C32428442214002341DF /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		DDBCB8DE282FEC7C00943269 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E0282FEC9100943269 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DDBCB8E2282FECBD00943269 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDDFD32728301CFF0019B142 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		DDE760802844EE89008EDF0A /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
 		DDE760822844EF31008EDF0A /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		DDE94C25281835DB0008E584 /* Project-Share-Point.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-Share-Point.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE94C28281835DB0008E584 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				DDB3C32428442214002341DF /* RegisterModel.swift */,
 				DDE760822844EF31008EDF0A /* ProjectModel.swift */,
 				DD2A9AC02844C4B1008E900C /* APIManager.swift */,
-				DDE760802844EE89008EDF0A /* ServerModel.swift */,
+				DD8C5DBA2850237E008D136C /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -214,12 +214,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE760832844EF31008EDF0A /* ProjectModel.swift in Sources */,
+				DD8C5DBB2850237E008D136C /* LoginModel.swift in Sources */,
 				DDE94C2D281835DB0008E584 /* ViewController.swift in Sources */,
 				DDE94C29281835DB0008E584 /* AppDelegate.swift in Sources */,
 				DD2A9AC12844C4B1008E900C /* APIManager.swift in Sources */,
 				DDDFD32828301CFF0019B142 /* Utilities.swift in Sources */,
 				DDB3C322284420D3002341DF /* Constant.swift in Sources */,
-				DDE760812844EE89008EDF0A /* ServerModel.swift in Sources */,
 				DDBCB8DF282FEC7C00943269 /* SignUpViewController.swift in Sources */,
 				DDBCB8E1282FEC9100943269 /* LoginViewController.swift in Sources */,
 				DDE94C2B281835DB0008E584 /* SceneDelegate.swift in Sources */,

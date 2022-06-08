@@ -13,9 +13,9 @@ let register_url = "\(base_url)registration"
 
 let login_url = "\(base_url)login"
 
+
 struct Consts {
     struct StoryBoard {
-        
        static let homeViewController = "HomeVC"
         static let loginViewController = "LoginVC"
     }
